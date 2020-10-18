@@ -1,0 +1,17 @@
+Feature: Buy operations
+
+  Scenario: Successfully buy 3 apples and there is stock
+    Given Stock of apples is 5
+    When Trying to buy 3
+    Then Stock should be 2
+
+  Scenario: Add 5 apples to stock
+    Given Stock of apples is 3
+    When Trying to add 5
+    Then Stock should be 8
+
+  Scenario: Try to buy 5 apples but there is no stock
+    Given Stock of apples is 4
+    When Trying to buy 5
+    Then Get no stock message
+    And Stock of apples remains in 4
