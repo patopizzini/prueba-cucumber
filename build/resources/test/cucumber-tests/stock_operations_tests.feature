@@ -15,3 +15,9 @@ Feature: Buy operations
     When Trying to buy 5
     Then Get no stock message
     And Stock of apples remains in 4
+
+  Scenario: Start with 4 apples then add 2 to buy 5 apples
+    Given Stock of apples is 4
+    When Trying to add 2
+    And Trying to buy 6
+    Then Stock should be 0

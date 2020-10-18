@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: Successfully buy 3 apples and there is stock" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-10-18T03:45:11" hostname="DESKTOP-4GFFFBL" time="0.004">
+<testsuite name="Scenario: Successfully buy 3 apples and there is stock" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-10-18T04:22:58" hostname="DESKTOP-4GFFFBL" time="0.005">
   <properties/>
   <testcase name="Given Stock of apples is 5" classname="Scenario: Successfully buy 3 apples and there is stock" time="0.001"/>
   <testcase name="When Trying to buy 3" classname="Scenario: Successfully buy 3 apples and there is stock" time="0.0"/>
   <testcase name="Then Stock should be 2" classname="Scenario: Successfully buy 3 apples and there is stock" time="0.0"/>
-  <testcase name="classMethod" classname="Scenario: Successfully buy 3 apples and there is stock" time="0.158"/>
+  <testcase name="classMethod" classname="Scenario: Successfully buy 3 apples and there is stock" time="0.187"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Start with 4 apples then add 2 to buy 5 apples" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-18T04:22:58" hostname="DESKTOP-4GFFFBL" time="0.003">
+  <properties/>
+  <testcase name="Given Stock of apples is 4" classname="Scenario: Start with 4 apples then add 2 to buy 5 apples" time="0.0"/>
+  <testcase name="When Trying to add 2" classname="Scenario: Start with 4 apples then add 2 to buy 5 apples" time="0.001"/>
+  <testcase name="And Trying to buy 6" classname="Scenario: Start with 4 apples then add 2 to buy 5 apples" time="0.0"/>
+  <testcase name="Then Stock should be 0" classname="Scenario: Start with 4 apples then add 2 to buy 5 apples" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Start with 4 apples then add 2 to buy 5 apples" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

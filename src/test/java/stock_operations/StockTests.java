@@ -1,7 +1,5 @@
 package stock_operations;
 
-import stock_operations.Stock;
-import stock_operations.Operations;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,13 +11,13 @@ public class StockTests {
     private String message = null;
 
     @Given("^Stock of apples is (\\d+)$")
-    public void stock_of_apples_is(int stock) {
-        this.appleStock = new Stock(stock);
+    public void stock_of_apples_is(int new_stock) {
+        this.appleStock = new Stock(new_stock);
     }
 
     @When("^Trying to buy (\\d+)$")
     public void trying_to_buy(int quantity) {
-        if (quantity <= appleStock.getStock()) {
+        if (quantity <= appleStock.getStock_remaining()) {
             appleStock = Operations.buy(appleStock, quantity);
         } else {
             message = "No hay stock";
@@ -33,7 +31,7 @@ public class StockTests {
 
     @Then("^Stock should be (\\d+)$")
     public void stock_should_be(int quantity) {
-        assertEquals(quantity,appleStock.getStock());
+        assertEquals(quantity,appleStock.getStock_remaining());
     }
 
     @Then("^Get no stock message$")
@@ -43,7 +41,7 @@ public class StockTests {
 
     @Then("^Stock of apples remains in (\\d+)$")
     public void stock_of_apples_remains_in(int quantity) {
-        assertEquals(quantity,appleStock.getStock());
+        assertEquals(quantity,appleStock.getStock_remaining());
     }
 
 }
